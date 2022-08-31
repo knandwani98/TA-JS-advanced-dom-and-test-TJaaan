@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Notice Board</h1>
+    <form class="container" action="">
+      <div class="flex col">
+        <input
+          required
+          class="formbox input-title"
+          type="text"
+          placeholder="Enter the Title"
+        />
+        <input
+          required
+          class="formbox input-category"
+          type="text"
+          placeholder="Enter the Category"
+        />
+        <input class="btn" type="submit" value="+ Items" />
+      </div>
+    </form>
+    <section class="gap">
+      <div class="container root flex wrap">
+        <div class="card">
+          <a href="#">categorys</a>
+          <h2>title</h2>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
