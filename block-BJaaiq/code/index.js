@@ -1,7 +1,3 @@
-// window.addEventListener("DOMContentLoaded", () => {
-//   alert(`The content of the DOM is loaded`);
-// });
-
 let root = document.querySelector(".root");
 
 let count = 3,
@@ -29,4 +25,8 @@ document.addEventListener("scroll", () => {
   if (scrollTop + clienHeight >= scrollHeight && ind < quotes.length) {
     createUI();
   }
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  alert(`The content of the DOM is loaded`);
 });
