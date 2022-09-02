@@ -8,18 +8,17 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Notice Board</h1>
     <form class="container" action="">
       <div class="flex col">
         <input
           required
-          class="formbox input-title"
+          name="title"
           type="text"
           placeholder="Enter the Title"
         />
         <input
           required
-          class="formbox input-category"
+          name="category"
           type="text"
           placeholder="Enter the Category"
         />
@@ -27,12 +26,7 @@
       </div>
     </form>
     <section class="gap">
-      <div class="container root flex wrap">
-        <div class="card">
-          <a href="#">categorys</a>
-          <h2>title</h2>
-        </div>
-      </div>
+      <ul class="container root flex wrap"></ul>
     </section>
     <script src="index.js"></script>
   </body>
