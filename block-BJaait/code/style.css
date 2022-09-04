@@ -208,4 +208,6 @@ ul li {
   margin-top: 1rem;
   background-color: antiquewhite;
   font-weight: 700;
+  cursor: move;
+  text-transform: capitalize;
 }
