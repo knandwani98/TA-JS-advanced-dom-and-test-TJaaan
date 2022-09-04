@@ -19,11 +19,13 @@ function createUI(data = items, rooot = root) {
 }
 
 plus.addEventListener("click", (e) => {
-  let value = e.target.previousSibling.previousSibling.value;
-  items.push({ value });
-  localStorage.setItem("allItems", JSON.stringify(items));
-  createUI();
-  e.target.previousSibling.previousSibling.value = "";
+  let value = e.target.previousSibling.previousSibling.value.trim();
+  if (value !== "") {
+    items.push({ value });
+    localStorage.setItem("allItems", JSON.stringify(items));
+    createUI();
+    e.target.previousSibling.previousSibling.value = "";
+  }
 });
 
 form.addEventListener("submit", (e) => {
